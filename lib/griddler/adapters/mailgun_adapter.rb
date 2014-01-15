@@ -40,6 +40,8 @@ module Griddler
 
       def extract_header_cc
         Rails.logger.debug params['message-headers']
+        headers = params['message-headers']
+        Rails.logger.debug "dsfsdfsdfsdfsdfsdfsdfsd"
         header = params['message-headers'].select{|h|
           h.first == 'Cc'
         }.first
