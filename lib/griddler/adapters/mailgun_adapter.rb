@@ -13,7 +13,7 @@ module Griddler
       def normalize_params
         params.merge(
           to: recipients,
-          cc: ccs,
+          #cc: ccs,
           text: params['body-plain'],
           html: params['body-html'],
           headers: params['message-headers'],
